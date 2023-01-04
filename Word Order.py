@@ -8,14 +8,10 @@ for i in range(n):
     words_list.append(words)
 
 counter = Counter(words_list)
+occurence = ""
 
-occ_num = []
-dist_words = 0
 for word in counter:
-    occ_num.append(str(counter[word]))
-    if counter[word] == 1:
-        dist_words += 1 
-    
-occurence = " ".join(occ_num)
+    occurence += str(counter[word]) + " "
+
 print(len(counter))
-print(occurence
+print(occurence)
